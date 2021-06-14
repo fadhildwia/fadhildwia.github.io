@@ -1,0 +1,150 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*============================HEADER=========================*/
+
+header {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+}
+
+.container {
+    width: 1270px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+}
+
+.item-header {
+    flex: auto;
+}
+
+.header h1 {
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.header ul {
+    text-align: right;
+    display: flex;
+    padding-inline-start: 0;
+    margin: auto;
+}
+
+.header li {
+    flex: auto;
+}
+
+.header a {
+    color: black;
+}
+
+
+/*============================HOME=========================*/
+
+.home {
+    margin-top: 300px;
+}
+
+.home .container {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.item-home {
+    flex: auto;
+    margin: auto;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.center-home {
+    margin: 0 auto;
+}
+
+.center-home h1 {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 0;
+}
+
+.text-home {
+    font-weight: normal;
+    font-size: 25px;
+    width: 450px;
+    margin: 30px 0;
+    padding: 0;
+}
+
+.contactme-home {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+
+.btn-contactme {
+    background-color: #163172;
+    color: white;
+}
+
+.right-home {
+    text-align: center;
+}
+
+.profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+
+/*============================ABOUT=========================*/
+
+.about-img {
+    width: 300px;
+    height: auto;
+}
