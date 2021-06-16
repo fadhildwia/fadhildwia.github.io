@@ -258,12 +258,12 @@ nav ul li a:hover {
     }
     .left-home p {
         font-size: 15px;
-        margin-bottom: 15px;
-        width: 300px;
+        width: auto;
     }
     .left-home img {
         width: 40px;
         height: 40px;
+        margin-right: auto;
     }
     .right-home {
         order: 1;
