@@ -17,6 +17,49 @@ a {
 }
 
 
+/*============================FOR ALL=========================*/
+
+.title {
+    background-color: #393E46;
+    padding: 40px 0;
+    gap: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title h1 {
+    width: 35%;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #D89216;
+}
+
+.title .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.items h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.items p {
+    font-size: 11px;
+    line-height: 130%;
+}
+
+
 /*============================HEADER=========================*/
 
 nav {
@@ -158,27 +201,6 @@ nav ul li a:hover {
 
 /*============================ABOUT=========================*/
 
-.about {
-    background-color: #393E46;
-    padding: 40px 0;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-}
-
-.about h1 {
-    font-size: 40px;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    padding: 0 200px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #D89216;
-}
-
 .about .quote {
     color: #D89216;
 }
@@ -209,23 +231,6 @@ nav ul li a:hover {
 
 .skills {
     background-color: #222831;
-    padding: 40px 0;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-}
-
-.skills h1 {
-    font-size: 40px;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    padding: 0 200px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #D89216;
 }
 
 .skills div {
@@ -243,57 +248,22 @@ nav ul li a:hover {
 
 .project {
     background-color: #393E46;
-    padding: 40px 0;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
 }
 
-.project h1 {
-    font-size: 40px;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    padding: 0 200px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #D89216;
-}
-
-.card {
-    display: flex;
-    max-width: 50%;
-    /* border: 1px solid #ddd; */
-    overflow-x: auto;
-    text-align: start;
-}
-
-.card .card-project {
-    height: 400px;
-    min-width: 40%;
-    margin: 5px;
+.items-project {
+    width: 30%;
+    padding-bottom: 10px;
     background-color: #222831;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px 1px rgba(194, 194, 194, 0.2);
+    padding: 10px;
+    box-shadow: 0px 0px 3px 1px rgba(194, 194, 194, 0.2);
+    text-align: left;
+    margin: 5px 5px;
 }
 
-.card-project .img {
-    background-color: rgb(4, 5, 3);
-    padding: 130px 40%;
-    border-radius: 10px;
-}
-
-.card-project .title {
-    font-size: 15px;
-    font-weight: bold;
-    margin: 5px;
-}
-
-.card-project .text {
-    font-size: 12px;
-    margin: 5px;
+.items-project img {
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 
@@ -301,34 +271,10 @@ nav ul li a:hover {
 
 .publication {
     background-color: #222831;
-    padding: 40px 0;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-}
-
-.publication h1 {
-    font-size: 40px;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    padding: 0 200px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #D89216;
-}
-
-.items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .items-publication {
-    width: 15%;
+    width: 20%;
     padding-bottom: 10px;
     background-color: #393E46;
     border-radius: 10px;
@@ -342,14 +288,50 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.items-publication h2 {
-    font-size: 12px;
+
+/*============================CERTIFICATE=========================*/
+
+.certificate {
+    background-color: #393E46;
+}
+
+.items-certificate {
+    width: 20%;
+    padding-bottom: 10px;
+    background-color: #222831;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 1px rgba(194, 194, 194, 0.2);
+    text-align: center;
+    margin: 5px 5px;
+}
+
+.items-certificate img {
+    width: 100%;
     margin-bottom: 10px;
 }
 
-.items-publication p {
-    font-size: 11px;
-    line-height: 130%;
+
+/*============================FOOTER=========================*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: #222831;
+    padding: 20px 0;
+}
+
+footer div h1,
+p,
+a {
+    margin: 20px 0;
+}
+
+footer img {
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -359,6 +341,26 @@ nav ul li a:hover {
 /* Size Tablet */
 
 @media screen and (max-width: 920px) {
+    /*============================FOR ALL=========================*/
+    .title {
+        padding: 40px 0;
+        gap: 15px;
+    }
+    .title .items {
+        flex-direction: column;
+    }
+    .title h1 {
+        font-size: 35px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #D89216;
+    }
+    .items h2 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .items p {
+        line-height: 120%;
+    }
     /*============================HEADER=========================*/
     nav ul {
         width: 60%;
@@ -383,16 +385,6 @@ nav ul li a:hover {
         height: 250px;
     }
     /*============================ABOUT=========================*/
-    .about {
-        padding: 40px 0;
-        gap: 15px;
-    }
-    .about h1 {
-        font-size: 35px;
-        padding: 0 150px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #D89216;
-    }
     .about .quote {
         width: 80%;
     }
@@ -404,16 +396,6 @@ nav ul li a:hover {
         padding: 15px 25px;
     }
     /*============================SKILLS=========================*/
-    .skills {
-        padding: 40px 0;
-        gap: 15px;
-    }
-    .skills h1 {
-        font-size: 35px;
-        padding: 0 150px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #D89216;
-    }
     .skills div {
         width: 80%;
     }
@@ -423,53 +405,29 @@ nav ul li a:hover {
         margin: 15px;
     }
     /*============================PROJECT=========================*/
-    .project {
-        padding: 40px 0;
-        gap: 15px;
+    .items-project {
+        width: 60%;
     }
-    .project h1 {
-        font-size: 35px;
-        padding: 0 150px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #D89216;
-    }
-    .card {
-        display: flex;
-        max-width: 75%;
-        overflow-x: auto;
-        text-align: start;
-    }
-    .card .card-project {
-        height: 350px;
-        min-width: 45%;
-        margin: 5px;
-    }
-    .card-project .img {
-        padding: 100px 45%;
-    }
-    .card-project .title {
-        font-size: 15px;
-    }
-    .card-project .text {
-        font-size: 12px;
-        margin: 5px;
+    .items-project img {
+        width: 100%;
+        margin-bottom: 5px;
     }
     /*============================PUBLUCATION=========================*/
-    .publication {
-        padding: 40px 0;
-        gap: 15px;
-    }
-    .publication h1 {
-        font-size: 35px;
-        padding: 0 150px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #D89216;
-    }
     .items-publication {
-        width: 30%;
+        width: 35%;
     }
-    .items-publication p {
-        line-height: 120%;
+    /*============================CERTIFICATE=========================*/
+    .items-certificate {
+        width: 60%;
+    }
+    .items-certificate img {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    /*============================FOOTER=========================*/
+    footer img {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -477,6 +435,19 @@ nav ul li a:hover {
 /* Size Mobile */
 
 @media screen and (max-width: 620px) {
+    /*============================FOR ALL=========================*/
+    .title {
+        padding: 40px 0;
+        gap: 10px;
+    }
+    .title h1 {
+        font-size: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #D89216;
+    }
+    .items p {
+        line-height: 115%;
+    }
     /*============================HEADER=========================*/
     .menu-toggle {
         display: flex;
@@ -531,16 +502,6 @@ nav ul li a:hover {
         height: 250px;
     }
     /*============================ABOUT=========================*/
-    .about {
-        padding: 40px 0;
-        gap: 10px;
-    }
-    .about h1 {
-        font-size: 30px;
-        padding: 0 80px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #D89216;
-    }
     .about .about-text {
         width: 75%;
         line-height: 115%;
@@ -550,16 +511,6 @@ nav ul li a:hover {
         padding: 10px 20px;
     }
     /*============================SKILLS=========================*/
-    .skills {
-        padding: 40px 0;
-        gap: 10px;
-    }
-    .skills h1 {
-        font-size: 30px;
-        padding: 0 80px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #D89216;
-    }
     .skills div {
         width: 85%;
     }
@@ -569,52 +520,10 @@ nav ul li a:hover {
         margin: 10px;
     }
     /*============================PROJECT=========================*/
-    .project {
-        padding: 40px 0;
-        gap: 10px;
-    }
-    .project h1 {
-        font-size: 30px;
-        padding: 0 80px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #D89216;
-    }
-    .card {
-        display: flex;
-        max-width: 85%;
-        overflow-x: auto;
-        text-align: start;
-    }
-    .card .card-project {
-        height: 350px;
-        min-width: 50%;
-        margin: 5px;
-    }
-    .card-project .img {
-        padding: 100px 50%;
-    }
-    .card-project .title {
-        font-size: 15px;
-    }
-    .card-project .text {
-        font-size: 12px;
-        margin: 5px;
-    }
     /*============================PUBLUCATION=========================*/
-    .publication {
-        padding: 40px 0;
-        gap: 15px;
-    }
-    .publication h1 {
-        font-size: 30px;
-        padding: 0 80px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #D89216;
-    }
     .items-publication {
-        width: 50%;
+        width: 60%;
     }
-    .items-publication p {
-        line-height: 115%;
-    }
+    /*============================CERTIFICATE=========================*/
+    /*============================FOOTER=========================*/
 }
