@@ -239,6 +239,120 @@ nav ul li a:hover {
 }
 
 
+/*============================PROJECT=========================*/
+
+.project {
+    background-color: #393E46;
+    padding: 40px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.project h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    padding: 0 200px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #D89216;
+}
+
+.card {
+    display: flex;
+    max-width: 50%;
+    /* border: 1px solid #ddd; */
+    overflow-x: auto;
+    text-align: start;
+}
+
+.card .card-project {
+    height: 400px;
+    min-width: 40%;
+    margin: 5px;
+    background-color: #222831;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px rgba(194, 194, 194, 0.2);
+}
+
+.card-project .img {
+    background-color: rgb(4, 5, 3);
+    padding: 130px 40%;
+    border-radius: 10px;
+}
+
+.card-project .title {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.card-project .text {
+    font-size: 12px;
+    margin: 5px;
+}
+
+
+/*============================PUBLUCATION=========================*/
+
+.publication {
+    background-color: #222831;
+    padding: 40px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.publication h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    padding: 0 200px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #D89216;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-publication {
+    width: 15%;
+    padding-bottom: 10px;
+    background-color: #393E46;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(194, 194, 194, 0.2);
+    text-align: left;
+}
+
+.items-publication img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.items-publication h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.items-publication p {
+    font-size: 11px;
+    line-height: 130%;
+}
+
+
 /* Responsive Breakpoint */
 
 
@@ -279,6 +393,9 @@ nav ul li a:hover {
         padding-bottom: 15px;
         border-bottom: 1px solid #D89216;
     }
+    .about .quote {
+        width: 80%;
+    }
     .about .about-text {
         width: 80%;
         line-height: 130%;
@@ -304,6 +421,55 @@ nav ul li a:hover {
         height: 150px;
         width: 150px;
         margin: 15px;
+    }
+    /*============================PROJECT=========================*/
+    .project {
+        padding: 40px 0;
+        gap: 15px;
+    }
+    .project h1 {
+        font-size: 35px;
+        padding: 0 150px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #D89216;
+    }
+    .card {
+        display: flex;
+        max-width: 75%;
+        overflow-x: auto;
+        text-align: start;
+    }
+    .card .card-project {
+        height: 350px;
+        min-width: 45%;
+        margin: 5px;
+    }
+    .card-project .img {
+        padding: 100px 45%;
+    }
+    .card-project .title {
+        font-size: 15px;
+    }
+    .card-project .text {
+        font-size: 12px;
+        margin: 5px;
+    }
+    /*============================PUBLUCATION=========================*/
+    .publication {
+        padding: 40px 0;
+        gap: 15px;
+    }
+    .publication h1 {
+        font-size: 35px;
+        padding: 0 150px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #D89216;
+    }
+    .items-publication {
+        width: 30%;
+    }
+    .items-publication p {
+        line-height: 120%;
     }
 }
 
@@ -401,5 +567,54 @@ nav ul li a:hover {
         height: 100px;
         width: 100px;
         margin: 10px;
+    }
+    /*============================PROJECT=========================*/
+    .project {
+        padding: 40px 0;
+        gap: 10px;
+    }
+    .project h1 {
+        font-size: 30px;
+        padding: 0 80px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #D89216;
+    }
+    .card {
+        display: flex;
+        max-width: 85%;
+        overflow-x: auto;
+        text-align: start;
+    }
+    .card .card-project {
+        height: 350px;
+        min-width: 50%;
+        margin: 5px;
+    }
+    .card-project .img {
+        padding: 100px 50%;
+    }
+    .card-project .title {
+        font-size: 15px;
+    }
+    .card-project .text {
+        font-size: 12px;
+        margin: 5px;
+    }
+    /*============================PUBLUCATION=========================*/
+    .publication {
+        padding: 40px 0;
+        gap: 15px;
+    }
+    .publication h1 {
+        font-size: 30px;
+        padding: 0 80px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #D89216;
+    }
+    .items-publication {
+        width: 50%;
+    }
+    .items-publication p {
+        line-height: 115%;
     }
 }
