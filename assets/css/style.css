@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: lato, sans-serif;
     overflow-x: hidden;
@@ -27,7 +31,7 @@ a {
 
 .title {
     background-color: #393E46;
-    padding: 40px 0;
+    padding: 60px 0;
     gap: 30px;
     color: #fff;
     display: flex;
@@ -443,7 +447,7 @@ footer img {
 @media screen and (max-width: 620px) {
     /*============================FOR ALL=========================*/
     .title {
-        padding: 40px 0;
+        padding: 60px 0;
         gap: 10px;
     }
     .title h1 {
@@ -463,7 +467,7 @@ footer img {
         right: 0;
         top: 30px;
         width: 50%;
-        height: 50vh;
+        height: 70vh;
         margin: 20px 0;
         flex-direction: column;
         align-items: center;
