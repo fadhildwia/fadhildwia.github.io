@@ -19,6 +19,12 @@ a {
 
 /*============================FOR ALL=========================*/
 
+#about,
+#skills,
+#project,
+#publication,
+#certificate {}
+
 .title {
     background-color: #393E46;
     padding: 40px 0;
