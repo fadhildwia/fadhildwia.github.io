@@ -20,6 +20,22 @@ a {
     text-decoration: none;
 }
 
+/*==========================TRANSITION==========================*/
+@keyframes transitionIn {
+    from{
+        opacity: 0;
+        transform: translateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body{
+    animation: transitionIn 0.75s;
+}
 
 /*============================FOR ALL=========================*/
 
@@ -85,8 +101,13 @@ nav {
     align-items: center;
 }
 
-nav .brand {
+.brand a {
     letter-spacing: 3px;
+    color: rgb(201, 201, 201);
+}
+
+.brand a:hover {
+    color: #fff;
 }
 
 nav ul {
