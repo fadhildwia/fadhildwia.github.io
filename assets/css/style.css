@@ -37,6 +37,9 @@ body{
     animation: transitionIn 0.75s;
 }
 
+nav ul li a.active{
+    background-color:rgba(194, 194, 194, 0.2);
+}
 /*============================FOR ALL=========================*/
 
 #about,
@@ -55,6 +58,14 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: red; */
 }
 
 .title h1 {
@@ -118,7 +129,7 @@ nav ul {
 
 nav ul li a {
     display: inline-block;
-    padding: 20px 5px;
+    padding: 18px 25px;
     box-sizing: border-box;
     color: rgb(201, 201, 201);
     font-size: 0.8em;
