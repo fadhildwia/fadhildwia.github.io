@@ -1,44 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: lato, sans-serif;
-    overflow-x: hidden;
+  font-family: lato, sans-serif;
+  overflow-x: hidden;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*==========================TRANSITION==========================*/
 @keyframes transitionIn {
-    from{
-        opacity: 0;
-        transform: translateX(-10deg);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-10deg);
+  }
 
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-body{
-    animation: transitionIn 0.75s;
+body {
+  animation: transitionIn 0.75s;
 }
 
-nav ul li a.active{
-    background-color:rgba(194, 194, 194, 0.2);
+nav ul li a.active {
+  color: #fff;
 }
 /*============================FOR ALL=========================*/
 
@@ -46,526 +46,514 @@ nav ul li a.active{
 #skills,
 #project,
 #publication,
-#certificate {}
+#certificate {
+}
 
 .title {
-    background-color: #393E46;
-    padding: 60px 0;
-    gap: 30px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-color: #393e46;
+  padding: 60px 0;
+  gap: 30px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    /* background-color: red; */
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: red; */
 }
 
 .title h1 {
-    width: 35%;
-    font-size: 40px;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #D89216;
+  width: 35%;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d89216;
 }
 
 .title .items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
 .items h2 {
-    font-size: 12px;
-    margin-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .items p {
-    font-size: 11px;
-    line-height: 130%;
+  font-size: 11px;
+  line-height: 130%;
 }
-
 
 /*============================HEADER=========================*/
 
 nav {
-    position: fixed;
-    display: flex;
-    background-color: #222831;
-    justify-content: space-around;
-    height: 50px;
-    width: 100%;
-    top: 0;
-    color: rgb(201, 201, 201);
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
-    align-items: center;
+  position: fixed;
+  display: flex;
+  background-color: #222831;
+  justify-content: space-around;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  color: rgb(201, 201, 201);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  align-items: center;
 }
 
 .brand a {
-    letter-spacing: 3px;
-    color: rgb(201, 201, 201);
+  letter-spacing: 3px;
+  color: rgb(201, 201, 201);
 }
 
 .brand a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 nav ul {
-    display: flex;
-    width: 35%;
-    justify-content: space-between;
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
 }
 
 nav ul li a {
-    display: inline-block;
-    padding: 18px 25px;
-    box-sizing: border-box;
-    color: rgb(201, 201, 201);
-    font-size: 0.8em;
+  display: inline-block;
+  padding: 18px 25px;
+  box-sizing: border-box;
+  color: rgb(201, 201, 201);
+  font-size: 0.8em;
 }
 
 nav ul li a:hover {
-    color: white;
+  color: white;
 }
-
 
 /* Humberger Menu */
 
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
 }
 
 .menu-toggle input {
-    position: absolute;
-    width: 40px;
-    height: 28px;
-    left: -5px;
-    top: -3px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: rgb(201, 201, 201);
-    border-radius: 5px;
-    transition: all 0.5s;
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(201, 201, 201);
+  border-radius: 5px;
+  transition: all 0.5s;
 }
-
 
 /* Humberger Menu Animation */
 
 .menu-toggle span:nth-child(2) {
-    transform-origin: 0 0;
+  transform-origin: 0 0;
 }
 
 .menu-toggle span:nth-child(4) {
-    transform-origin: 0 100%;
+  transform-origin: 0 100%;
 }
 
-.menu-toggle input:checked~span:nth-child(2) {
-    background-color: white;
-    transform: rotate(45deg)translate(-1px, -1px);
+.menu-toggle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
 }
 
-.menu-toggle input:checked~span:nth-child(4) {
-    transform: rotate(-45deg)translate(-1px, 0);
-    background-color: white;
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+  background-color: white;
 }
 
-.menu-toggle input:checked~span:nth-child(3) {
-    opacity: 0;
-    transform: scale(0);
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
 }
-
 
 /*============================HOME=========================*/
 
 .home {
-    background-color: #222831;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    height: 750px;
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 750px;
 }
 
 .left-home {
-    width: 50%;
-    /* background-color: green; */
+  width: 50%;
+  /* background-color: green; */
 }
 
 .left-home h1 {
-    font-size: 40px;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
 }
 
 .left-home p {
-    font-weight: lighter;
-    font-size: large;
-    margin-bottom: 20px;
-    width: 400px;
+  font-weight: lighter;
+  font-size: large;
+  margin-bottom: 20px;
+  width: 400px;
 }
 
 .left-home img {
-    width: 70px;
-    height: 70px;
-    margin-right: 30px;
+  width: 70px;
+  height: 70px;
+  margin-right: 30px;
 }
 
 .right-home img {
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
-
 
 /*============================ABOUT=========================*/
 
 .about .quote {
-    color: #D89216;
+  color: #d89216;
 }
 
 .about .about-text {
-    width: 60%;
-    line-height: 140%;
+  width: 60%;
+  line-height: 140%;
 }
 
 .about a {
-    color: #fff;
+  color: #fff;
 }
 
 .btn-cv {
-    display: inline-block;
-    background-color: orange;
-    padding: 20px 30px;
-    border-radius: 10px;
+  display: inline-block;
+  background-color: orange;
+  padding: 20px 30px;
+  border-radius: 10px;
 }
 
 .btn-cv:hover {
-    color: #000;
-    box-shadow: 0px 0px 10px 5px rgba(194, 194, 194, 0.2);
+  color: #000;
+  box-shadow: 0px 0px 10px 5px rgba(194, 194, 194, 0.2);
 }
-
 
 /*============================SKILLS=========================*/
 
 .skills {
-    background-color: #222831;
+  background-color: #222831;
 }
 
 .skills div {
-    width: 60%;
+  width: 60%;
 }
 
 .skills img {
-    height: 200px;
-    width: 200px;
-    margin: 20px;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
 }
-
 
 /*============================PROJECT=========================*/
 
 .project {
-    background-color: #393E46;
+  background-color: #393e46;
 }
 
 .items-project {
-    width: 30%;
-    padding-bottom: 10px;
-    background-color: #222831;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0px 0px 3px 1px rgba(194, 194, 194, 0.2);
-    text-align: left;
-    margin: 5px 5px;
+  width: 30%;
+  padding-bottom: 10px;
+  background-color: #222831;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 1px rgba(194, 194, 194, 0.2);
+  text-align: left;
+  margin: 5px 5px;
 }
 
 .items-project img {
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
-
 
 /*============================PUBLUCATION=========================*/
 
 .publication {
-    background-color: #222831;
+  background-color: #222831;
 }
 
 .items-publication {
-    width: 20%;
-    padding-bottom: 10px;
-    background-color: #393E46;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0px 0px 5px 1px rgba(194, 194, 194, 0.2);
-    text-align: left;
+  width: 20%;
+  padding-bottom: 10px;
+  background-color: #393e46;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 1px rgba(194, 194, 194, 0.2);
+  text-align: left;
 }
 
 .items-publication img {
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
-
 
 /*============================CERTIFICATE=========================*/
 
 .certificate {
-    background-color: #393E46;
+  background-color: #393e46;
 }
 
 .items-certificate {
-    width: 20%;
-    padding-bottom: 10px;
-    background-color: #222831;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0px 0px 3px 1px rgba(194, 194, 194, 0.2);
-    text-align: center;
-    margin: 5px 5px;
+  width: 20%;
+  padding-bottom: 10px;
+  background-color: #222831;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 3px 1px rgba(194, 194, 194, 0.2);
+  text-align: center;
+  margin: 5px 5px;
 }
 
 .items-certificate img {
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
-
 
 /*============================FOOTER=========================*/
 
 footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    background-color: #222831;
-    padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: #222831;
+  padding: 20px 0;
 }
 
 footer div h1,
 p,
 a {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 footer img {
-    width: 70px;
-    height: 70px;
+  width: 70px;
+  height: 70px;
 }
 
-
 /* Responsive Breakpoint */
-
 
 /* Size Tablet */
 
 @media screen and (max-width: 920px) {
-    /*============================FOR ALL=========================*/
-    .title {
-        padding: 40px 0;
-        gap: 15px;
-    }
-    .title .items {
-        flex-direction: column;
-    }
-    .title h1 {
-        font-size: 35px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #D89216;
-    }
-    .items h2 {
-        font-size: 12px;
-        margin-bottom: 5px;
-    }
-    .items p {
-        line-height: 120%;
-    }
-    /*============================HEADER=========================*/
-    nav ul {
-        width: 60%;
-    }
-    /*============================HOME=========================*/
-    .left-home h1 {
-        font-size: 25px;
-        margin-bottom: 15px;
-    }
-    .left-home p {
-        font-size: 15px;
-        margin-bottom: 15px;
-        width: 300px;
-    }
-    .left-home img {
-        width: 40px;
-        height: 40px;
-        margin-right: 20px;
-    }
-    .right-home img {
-        width: 250px;
-        height: 250px;
-    }
-    /*============================ABOUT=========================*/
-    .about .quote {
-        width: 80%;
-    }
-    .about .about-text {
-        width: 80%;
-        line-height: 130%;
-    }
-    .btn-cv {
-        padding: 15px 25px;
-    }
-    /*============================SKILLS=========================*/
-    .skills div {
-        width: 80%;
-    }
-    .skills img {
-        height: 150px;
-        width: 150px;
-        margin: 15px;
-    }
-    /*============================PROJECT=========================*/
-    .items-project {
-        width: 60%;
-    }
-    .items-project img {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-    /*============================PUBLUCATION=========================*/
-    .items-publication {
-        width: 35%;
-    }
-    /*============================CERTIFICATE=========================*/
-    .items-certificate {
-        width: 60%;
-    }
-    .items-certificate img {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-    /*============================FOOTER=========================*/
-    footer img {
-        width: 40px;
-        height: 40px;
-    }
+  /*============================FOR ALL=========================*/
+  .title {
+    padding: 40px 0;
+    gap: 15px;
+  }
+  .title .items {
+    flex-direction: column;
+  }
+  .title h1 {
+    font-size: 35px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d89216;
+  }
+  .items h2 {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .items p {
+    line-height: 120%;
+  }
+  /*============================HEADER=========================*/
+  nav ul {
+    width: 60%;
+  }
+  /*============================HOME=========================*/
+  .left-home h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .left-home p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+  }
+  .left-home img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  .right-home img {
+    width: 250px;
+    height: 250px;
+  }
+  /*============================ABOUT=========================*/
+  .about .quote {
+    width: 80%;
+  }
+  .about .about-text {
+    width: 80%;
+    line-height: 130%;
+  }
+  .btn-cv {
+    padding: 15px 25px;
+  }
+  /*============================SKILLS=========================*/
+  .skills div {
+    width: 80%;
+  }
+  .skills img {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+  }
+  /*============================PROJECT=========================*/
+  .items-project {
+    width: 60%;
+  }
+  .items-project img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  /*============================PUBLUCATION=========================*/
+  .items-publication {
+    width: 35%;
+  }
+  /*============================CERTIFICATE=========================*/
+  .items-certificate {
+    width: 60%;
+  }
+  .items-certificate img {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  /*============================FOOTER=========================*/
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
 }
-
 
 /* Size Mobile */
 
 @media screen and (max-width: 620px) {
-    /*============================FOR ALL=========================*/
-    .title {
-        padding: 60px 0;
-        gap: 10px;
-    }
-    .title h1 {
-        font-size: 15px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #D89216;
-    }
-    .items p {
-        line-height: 115%;
-    }
-    /*============================HEADER=========================*/
-    .menu-toggle {
-        display: flex;
-    }
-    nav ul {
-        position: absolute;
-        right: 0;
-        top: 30px;
-        width: 50%;
-        height: 70vh;
-        margin: 20px 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        z-index: -1;
-        background-color: #222831;
-        transform: translateX(100%);
-        opacity: 0;
-        transition: all 1s;
-        z-index: -99;
-    }
-    nav ul.slide {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    /*============================HOME=========================*/
-    .home {
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: center;
-        height: 660px;
-    }
-    .left-home {
-        order: 2;
-    }
-    .left-home h1 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-    .left-home p {
-        font-size: 15px;
-        width: auto;
-    }
-    .left-home img {
-        width: 40px;
-        height: 40px;
-        margin-right: auto;
-    }
-    .right-home {
-        order: 1;
-        width: 250px;
-        height: 250px;
-    }
-    /*============================ABOUT=========================*/
-    .about .about-text {
-        width: 75%;
-        line-height: 115%;
-    }
-    .btn-cv {
-        border-radius: 5px;
-        padding: 10px 20px;
-    }
-    /*============================SKILLS=========================*/
-    .skills div {
-        width: 85%;
-    }
-    .skills img {
-        height: 100px;
-        width: 100px;
-        margin: 10px;
-    }
-    /*============================PROJECT=========================*/
-    /*============================PUBLUCATION=========================*/
-    .items-publication {
-        width: 60%;
-    }
-    /*============================CERTIFICATE=========================*/
-    /*============================FOOTER=========================*/
+  /*============================FOR ALL=========================*/
+  .title {
+    padding: 60px 0;
+    gap: 10px;
+  }
+  .title h1 {
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d89216;
+  }
+  .items p {
+    line-height: 115%;
+  }
+  /*============================HEADER=========================*/
+  .menu-toggle {
+    display: flex;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 50%;
+    height: 70vh;
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: -1;
+    background-color: #222831;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 1s;
+    z-index: -99;
+  }
+  nav ul.slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  /*============================HOME=========================*/
+  .home {
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 660px;
+  }
+  .left-home {
+    order: 2;
+  }
+  .left-home h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .left-home p {
+    font-size: 15px;
+    width: auto;
+  }
+  .left-home img {
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+  }
+  .right-home {
+    order: 1;
+    width: 250px;
+    height: 250px;
+  }
+  /*============================ABOUT=========================*/
+  .about .about-text {
+    width: 75%;
+    line-height: 115%;
+  }
+  .btn-cv {
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  /*============================SKILLS=========================*/
+  .skills div {
+    width: 85%;
+  }
+  .skills img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+  /*============================PROJECT=========================*/
+  /*============================PUBLUCATION=========================*/
+  .items-publication {
+    width: 60%;
+  }
+  /*============================CERTIFICATE=========================*/
+  /*============================FOOTER=========================*/
 }
