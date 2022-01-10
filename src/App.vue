@@ -1,30 +1,118 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-    <p class="text-primary">efsfsefsef</p>
+    <Home />
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Vue from 'vue'
+import Home from './views/Home.vue'
 
 export default Vue.extend({
   name: 'App',
   components: {
-    HelloWorld
+    Home
   }
 });
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: lato, sans-serif;
+    overflow-x: hidden;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /*==========================TRANSITION==========================*/
+  @keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: translateX(-10deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  body {
+    animation: transitionIn 0.75s;
+  }
+
+  nav ul li a.active {
+    color: #fff;
+  }
+  /*============================FOR ALL=========================*/
+  
+  #about,
+  #skills,
+  #project,
+  #publication,
+  #certificate {
+  }
+
+  .title {
+    background-color: #393e46;
+    padding: 60px 0;
+    gap: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: red; */
+  }
+
+  .title h1 {
+    width: 35%;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #d89216;
+  }
+
+  .title .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .items h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .items p {
+    font-size: 11px;
+    line-height: 130%;
+  }
 </style>
