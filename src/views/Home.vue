@@ -1,13 +1,16 @@
 <template>
   <div>
     <Navbar />
-    <Banner />
+    <Banner
+      :sosmed="dataSosmed"
+      :imgProfile="dataProfile"
+    />
     <About />
-    <Skills />
-    <Portfolio />
+    <Skills :dataSkills="dataSkills" />
+    <!-- <Portfolio />
     <Publisher />
     <Certificate />
-    <Footer />
+    <Footer /> -->
   </div>
 </template>
 
@@ -29,10 +32,29 @@ export default Vue.extend ({
     Banner,
     About,
     Skills,
-    Portfolio,
-    Publisher,
-    Certificate,
-    Footer
+    // Portfolio,
+    // Publisher,
+    // Certificate,
+    // Footer
+  },
+  data: function() {
+    return {
+      dataSosmed: [
+        { linkSosmed: 'https://www.linkedin.com/in/fadhilahdwiananda/', imgSosmed: 'linkedin.svg' },
+        { linkSosmed: 'https://github.com/fadhildwia', imgSosmed: 'github.svg' },
+        { linkSosmed: 'https://www.instagram.com/fadhilahdwia/', imgSosmed: 'instagram.svg' },
+      ],
+      dataProfile: '2.png',
+      dataSkills: [
+        { imgSkill: 'figma.png', label: 'Figma' },
+        { imgSkill: 'html.png', label: 'HTML' },
+        { imgSkill: 'jsedit.png', label: 'Javascript' },
+        // { imgSkill: 'react.png', label: 'React JS' },
+        { imgSkill: 'git.png', label: 'Git' },
+        { imgSkill: 'nodejs.png', label: 'Node JS' },
+        { imgSkill: 'python.png', label: 'Python' },
+      ],
+    }
   }
 })
 </script>

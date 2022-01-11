@@ -18,28 +18,53 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-  .about .quote {
-    color: #d89216;
+  .about {
+    .quote {
+      color: #d89216;
+    }
+    .about-text {
+      margin: 0 7vw;
+      line-height: 140%;
+    }
+    a {
+      color: #fff;
+    }
+    .btn-cv {
+      display: inline-block;
+      background-color: orange;
+      padding: 20px 30px;
+      border-radius: 10px;
+      &:hover {
+        color: #000;
+        box-shadow: 0px 0px 10px 5px rgba(194, 194, 194, 0.2);
+        border-radius: 10px;
+      }
+    }
   }
 
-  .about .about-text {
-    width: 60%;
-    line-height: 140%;
+  @media screen and (max-width: 920px) {
+    .about {
+      .quote {
+        width: 80%;
+      }
+      .about-text {
+        line-height: 130%;
+      }
+      .btn-cv {
+        padding: 15px 25px;
+      }
+    }
   }
 
-  .about a {
-    color: #fff;
-  }
-
-  .btn-cv {
-    display: inline-block;
-    background-color: orange;
-    padding: 20px 30px;
-    border-radius: 10px;
-  }
-
-  .btn-cv:hover {
-    color: #000;
-    box-shadow: 0px 0px 10px 5px rgba(194, 194, 194, 0.2);
+  @media screen and (max-width: 790px) {
+    .about {
+      .about-text {
+        line-height: 115%;
+      }
+      .btn-cv {
+        border-radius: 5px;
+        padding: 10px 20px;
+      }
+    }
   }
 </style>
