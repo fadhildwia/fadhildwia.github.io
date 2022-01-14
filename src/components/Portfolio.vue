@@ -2,11 +2,18 @@
   <div class="title project" id="project">
     <h1>Project</h1>
     <div class="items">
-      <div class="items-project">
+      <template v-for="(item, index) in dataPortfolio">
+        <div class="items-project" :key="index">
+          <a href="https://webtitipinaja.000webhostapp.com/"><img src="../assets/web-titipinaja.png" alt="" class=""></a>
+          <h2>Website Titipin Aja</h2>
+          <p>Website berbasis PHP Native yang dibuat menjadi web E-Commerce untuk titip jual sepatu atau titip beli sepatu.</p><br>
+        </div>
+      </template>
+      <!-- <div class="items-project">
         <a href="https://webtitipinaja.000webhostapp.com/"><img src="../assets/web-titipinaja.png" alt="" class=""></a>
         <h2>Website Titipin Aja</h2>
         <p>Website berbasis PHP Native yang dibuat menjadi web E-Commerce untuk titip jual sepatu atau titip beli sepatu.</p><br>
-      </div>
+      </div> -->
       <!-- <div class="items-project">
         <a href="https://github.com/fadhildwia/Web-analisis-sentimen-svm"><img src="../assets/web-analysis-sentiment.png" alt="" class=""></a>
         <h2>Website Analysis Sentimen Pengguna Provider Internet</h2>
@@ -25,7 +32,10 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'Portfolio'
+  name: 'Portfolio',
+  props: [
+    'dataPortfolio'
+  ]
 })
 </script>
 
@@ -33,7 +43,6 @@ export default Vue.extend({
   .project {
     background-color: #393e46;
   }
-
   .items-project {
     width: 30%;
     padding-bottom: 10px;
@@ -43,10 +52,19 @@ export default Vue.extend({
     box-shadow: 0px 0px 3px 1px rgba(194, 194, 194, 0.2);
     text-align: left;
     margin: 5px 5px;
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
 
-  .items-project img {
-    width: 100%;
-    margin-bottom: 10px;
+  @media screen and (max-width: 920px) {
+    .items-project {
+      width: 60%;
+      img {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+    }
   }
 </style>

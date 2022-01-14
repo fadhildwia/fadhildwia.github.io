@@ -7,10 +7,10 @@
     />
     <About />
     <Skills :dataSkills="dataSkills" />
-    <!-- <Portfolio />
-    <Publisher />
-    <Certificate />
-    <Footer /> -->
+    <Portfolio />
+    <!-- <Publisher /> -->
+    <!-- <Certificate /> -->
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default Vue.extend ({
     Banner,
     About,
     Skills,
-    // Portfolio,
+    Portfolio,
     // Publisher,
     // Certificate,
     // Footer
