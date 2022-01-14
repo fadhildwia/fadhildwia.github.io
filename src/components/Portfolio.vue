@@ -6,7 +6,7 @@
         <div class="items-project" :key="index">
           <a href="https://webtitipinaja.000webhostapp.com/"><img src="../assets/web-titipinaja.png" alt="" class=""></a>
           <h2>Website Titipin Aja</h2>
-          <p>Website berbasis PHP Native yang dibuat menjadi web E-Commerce untuk titip jual sepatu atau titip beli sepatu.</p><br>
+          <p>Website berbasis PHP Native yang dibuat menjadi web E-Commerce untuk titip jual sepatu atau titip beli sepatu.dwadwadawdawd</p><br>
         </div>
       </template>
       <!-- <div class="items-project">
