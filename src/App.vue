@@ -65,8 +65,8 @@ export default Vue.extend({
     align-items: center;
     text-align: center;
     h1 {
-      width: 35%;
-      font-size: 40px;
+      width: 35vw;
+      font-size: 25px;
       font-weight: bolder;
       letter-spacing: 3px;
       padding-bottom: 20px;
@@ -96,5 +96,13 @@ export default Vue.extend({
     align-items: center;
     text-align: center;
     /* background-color: red; */
+  }
+
+  @media screen and (max-width: 620px) {
+    .title {
+      h1 {
+        font-size: 15px;
+      }
+    }
   }
 </style>

@@ -27,7 +27,7 @@ export default Vue.extend({
     justify-content: center;
     text-align: center;
     color: #fff;
-    background-color: #222831;
+    background-color: #393e46;;
     padding: 20px 0;
   }
 

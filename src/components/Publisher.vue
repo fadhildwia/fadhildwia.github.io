@@ -25,17 +25,28 @@ export default Vue.extend({
   }
 
   .items-publication {
-    width: 20%;
+    width: 20vw;
     padding-bottom: 10px;
     background-color: #393e46;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0px 0px 5px 1px rgba(194, 194, 194, 0.2);
     text-align: left;
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
   }
 
-  .items-publication img {
-    width: 100%;
-    margin-bottom: 10px;
+  @media screen and (max-width: 920px) {
+    .items-publication {
+      width: 35vw;
+    }
+  }
+
+  @media screen and (max-width: 790px) {
+    .items-publication {
+      width: 60vw;
+    }
   }
 </style>

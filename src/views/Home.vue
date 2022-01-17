@@ -7,10 +7,9 @@
     />
     <About />
     <Skills :dataSkills="dataSkills" />
-    <Portfolio />
-    <!-- <Publisher /> -->
-    <!-- <Certificate /> -->
-    <!-- <Footer /> -->
+    <Portfolio :dataPortfolio="dataPortfolio" />
+    <Publisher />
+    <Footer />
   </div>
 </template>
 
@@ -22,7 +21,6 @@ import About from '../components/About.vue'
 import Skills from '../components/Skills.vue'
 import Portfolio from '../components/Portfolio.vue'
 import Publisher from '../components/Publisher.vue'
-import Certificate from '../components/Certificate.vue'
 import Footer from '../components/Footer.vue'
 
 export default Vue.extend ({
@@ -33,9 +31,8 @@ export default Vue.extend ({
     About,
     Skills,
     Portfolio,
-    // Publisher,
-    // Certificate,
-    // Footer
+    Publisher,
+    Footer
   },
   data: function() {
     return {
@@ -49,11 +46,16 @@ export default Vue.extend ({
         { imgSkill: 'figma.png', label: 'Figma' },
         { imgSkill: 'html.png', label: 'HTML' },
         { imgSkill: 'jsedit.png', label: 'Javascript' },
-        // { imgSkill: 'react.png', label: 'React JS' },
+        { imgSkill: 'react.png', label: 'React JS' },
         { imgSkill: 'git.png', label: 'Git' },
         { imgSkill: 'nodejs.png', label: 'Node JS' },
         { imgSkill: 'python.png', label: 'Python' },
       ],
+      dataPortfolio: [
+        { link: 'https://webtitipinaja.000webhostapp.com/', img: 'web-titipinaja.png', title: 'Website Titipin Aja', desc: 'Website berbasis PHP Native yang dibuat menjadi web E-Commerce untuk titip jual sepatu atau titip beli sepatu.' },
+        { link: 'https://github.com/fadhildwia/Web-analisis-sentimen-svm', img: 'web-analysis-sentiment.png', title: 'Website Titipin Aja', desc: 'Website yang menggunakan Flask dari bahasa pemrograman Python dengan fungsi untuk mencari tau sentimen masyarakat terhadap suatu provider internet menggunakan kecerdasan buatan dari algoritma Support Vector Machine.' },
+        { link: 'https://fadhildwia.github.io/landing-page-covid19/', img: 'web-landingpage-covid.png', title: 'Website Landing Page Covid-19', desc: 'Website yang menggunakan full CSS dan JavaScript yang dibuat untuk menghimbau kepada masyarakat tentang bahaya Covid-19.' },
+      ]
     }
   }
 })

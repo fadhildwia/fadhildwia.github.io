@@ -13,7 +13,12 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'About'
+  name: 'About',
+  methods: {
+    imagePath(photo: string) {
+      return require('../assets/' + photo)
+    }
+  }
 })
 </script>
 

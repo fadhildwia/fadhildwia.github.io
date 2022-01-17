@@ -9,7 +9,6 @@
       <li><a href="#skills">Skills</a></li>
       <li><a href="#project">Project</a></li>
       <li><a href="#publication">Publication</a></li>
-      <li><a href="#certificate">Certificate</a></li>
     </ul>
     <div class="menu-toggle">
       <input type="checkbox">
@@ -24,8 +23,33 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'Navbar'
-});
+  name: 'Navbar',
+  methods: {
+    // handleHamburger: function(e: any) {
+    //   const menuToggle: any = document.querySelector(".menu-toggle input");
+    //   const nav: any = document.querySelector("nav ul");
+
+    //   menuToggle.addEventListener("click", () => {
+    //     nav.classList.toggle("slide");
+    //   });
+
+    //   const logo: any = document.querySelector(".brand");
+    //   logo.style.cursor = "pointer";
+
+      // const navbars: any = document.querySelector(".navbar").querySelectorAll("a");
+      // // const animations = document.querySelectorAll(".title");
+      // // console.log(navbars);
+      // // console.log(animations);
+      // navbars.forEach((element: any) => {
+      //   element.addEventListener("click", function () {
+      //     navbars.forEach((navbar: any) => navbar.classList.remove("active"));
+
+      //     this.classList.add("active");
+      //   });
+      // });
+    // }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

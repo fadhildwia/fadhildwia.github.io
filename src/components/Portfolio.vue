@@ -4,9 +4,9 @@
     <div class="items">
       <template v-for="(item, index) in dataPortfolio">
         <div class="items-project" :key="index">
-          <a href="https://webtitipinaja.000webhostapp.com/"><img src="../assets/web-titipinaja.png" alt="" class=""></a>
-          <h2>Website Titipin Aja</h2>
-          <p>Website berbasis PHP Native yang dibuat menjadi web E-Commerce untuk titip jual sepatu atau titip beli sepatu.dwadwadawdawd</p><br>
+          <a href="item.link"><img v-bind:src="imagePath(item.img)" alt="item.img" class=""></a>
+          <h2>{{item.title}}</h2>
+          <p>{{item.desc}}</p><br>
         </div>
       </template>
       <!-- <div class="items-project">
@@ -35,7 +35,12 @@ export default Vue.extend({
   name: 'Portfolio',
   props: [
     'dataPortfolio'
-  ]
+  ],
+  methods: {
+    imagePath(photo: string) {
+      return require('../assets/' + photo)
+    }
+  }
 })
 </script>
 
