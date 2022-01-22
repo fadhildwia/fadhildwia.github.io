@@ -5,7 +5,7 @@
       :sosmed="dataSosmed"
       :imgProfile="dataProfile"
     />
-    <About />
+    <MyServices :dataServices="dataServices" />
     <Skills :dataSkills="dataSkills" />
     <Portfolio :dataPortfolio="dataPortfolio" />
     <Publisher />
@@ -17,7 +17,7 @@
 import Vue from 'vue'
 import Navbar from '../components/Navbar.vue'
 import Banner from '../components/Banner.vue'
-import About from '../components/About.vue'
+import MyServices from '../components/MyServices.vue'
 import Skills from '../components/Skills.vue'
 import Portfolio from '../components/Portfolio.vue'
 import Publisher from '../components/Publisher.vue'
@@ -28,7 +28,7 @@ export default Vue.extend ({
   components: {
     Navbar,
     Banner,
-    About,
+    MyServices,
     Skills,
     Portfolio,
     Publisher,
@@ -40,6 +40,12 @@ export default Vue.extend ({
         { linkSosmed: 'https://www.linkedin.com/in/fadhilahdwiananda/', imgSosmed: 'linkedin.svg' },
         { linkSosmed: 'https://github.com/fadhildwia', imgSosmed: 'github.svg' },
         { linkSosmed: 'https://www.instagram.com/fadhilahdwia/', imgSosmed: 'instagram.svg' },
+      ],
+      dataServices: [
+        { img: 'coding.svg', title: 'Web Developer', desc: 'Landing Page, E-commerce' },
+        { img: 'coding.svg', title: 'Web Developer', desc: 'Landing Page, E-commerce' },
+        { img: 'coding.svg', title: 'Web Developer', desc: 'Landing Page, E-commerce' },
+        { img: 'coding.svg', title: 'Web Developer', desc: 'Landing Page, E-commerce' },
       ],
       dataProfile: '2.png',
       dataSkills: [

@@ -5,7 +5,7 @@
     </div>
     <ul>
       <li><a href="#" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#my-services">My Services</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#project">Project</a></li>
       <li><a href="#publication">Publication</a></li>
@@ -54,6 +54,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
   nav {
+    z-index: 999;
     position: fixed;
     display: flex;
     justify-content: space-between;

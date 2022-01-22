@@ -8,6 +8,25 @@ module.exports = {
       // vue$: 'vue/dist/vue.esm.js'      // 'vue/dist/vue.common.js' for webpack 1
     }
   },
-  test: /\.(sass|less|css)$/,
-  loaders: ['style-loader', 'css-loader', 'less-loader']
+  module: {
+    rules: [
+      {
+        test: /\.(sass|less|css)$/,
+        loaders: ['style-loader', 'css-loader', 'less-loader'],
+      },
+      {
+        test: /\.(jpg.png)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/',
+              publicPath: 'img/'
+            }
+          }
+        ]
+      }
+    ],
+  },
 }
