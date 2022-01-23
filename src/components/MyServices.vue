@@ -50,7 +50,7 @@ export default Vue.extend({
         justify-content: center;
         align-items: center;
         background: #FFFFFF;
-        opacity: 80%;
+        opacity: 0.8;
         height: 250px;
         width: 250px;
         .image {
