@@ -57,6 +57,7 @@ export default Vue.extend({
     box-shadow: 0px 0px 3px 1px rgba(194, 194, 194, 0.2);
     text-align: left;
     margin: 5px 5px;
+    height: 350px;
     img {
       width: 100%;
       margin-bottom: 10px;
@@ -65,11 +66,19 @@ export default Vue.extend({
 
   @media screen and (max-width: 920px) {
     .items-project {
-      width: 60%;
+      width: 80%;
+      height: 350px;
       img {
         width: 100%;
         margin-bottom: 5px;
       }
+    }
+  }
+
+  @media screen and (max-width: 790px) {
+    .items-project {
+      width: 80%;
+      height: auto;
     }
   }
 </style>
