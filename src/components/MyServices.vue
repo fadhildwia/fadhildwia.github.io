@@ -3,7 +3,7 @@
     <h1>My Services</h1>
     <div class="item">
       <template v-for="(item, index) in dataServices">
-        <div class="card" :key="index">
+        <div class="card opacity80" :key="index">
           <div class="image">
             <img :src="imagePath(item.img)" width="100px">
           </div>
@@ -50,7 +50,6 @@ export default Vue.extend({
         justify-content: center;
         align-items: center;
         background: #FFFFFF;
-        opacity: 0.8;
         height: 250px;
         width: 250px;
         .image {
@@ -64,6 +63,9 @@ export default Vue.extend({
         p {
           color: black;
         }
+      .opacity80 {
+        opacity: 0.8;
+      }
       }
     }
   }
