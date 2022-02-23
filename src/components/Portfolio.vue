@@ -4,7 +4,7 @@
     <div class="items">
       <template v-for="(item, index) in dataPortfolio">
         <div class="items-project" :key="index">
-          <a href="item.link"><img v-bind:src="imagePath(item.img)" alt="item.img" class=""></a>
+          <a :href="item.link"><img v-bind:src="imagePath(item.img)" alt="item.img" class=""></a>
           <h2>{{item.title}}</h2>
           <p>{{item.desc}}</p><br>
         </div>
