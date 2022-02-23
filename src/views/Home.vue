@@ -61,6 +61,7 @@ export default Vue.extend ({
         { link: 'https://webtitipinaja.000webhostapp.com/', img: 'web-titipinaja.png', title: 'Website Titipin Aja', desc: 'Website berbasis PHP Native yang dibuat menjadi web E-Commerce untuk titip jual sepatu atau titip beli sepatu.' },
         { link: 'https://github.com/fadhildwia/Web-analisis-sentimen-svm', img: 'web-analysis-sentiment.png', title: 'Website Titipin Aja', desc: 'Website yang menggunakan Flask dari bahasa pemrograman Python dengan fungsi untuk mencari tau sentimen masyarakat terhadap suatu provider internet menggunakan kecerdasan buatan dari algoritma Support Vector Machine.' },
         { link: 'https://fadhildwia.github.io/landing-page-covid19/', img: 'web-landingpage-covid.png', title: 'Website Landing Page Covid-19', desc: 'Website yang menggunakan full CSS dan JavaScript yang dibuat untuk menghimbau kepada masyarakat tentang bahaya Covid-19.' },
+        { link: 'https://react-movie-app-1f6e0.web.app/', img: 'web-movie.png', title: 'Website Kumpulan Movie', desc: 'Website yang menggunakan react dan API dari the movie db yang di deploy dengan firebase.' },
       ]
     }
   }
