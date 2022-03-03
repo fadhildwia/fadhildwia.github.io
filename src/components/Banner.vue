@@ -26,7 +26,7 @@ export default Vue.extend ({
   ],
   methods: {
     imagePath(photo) {
-      return require('../assets/' + photo)
+      return require('../assets/images/' + photo)
     }
   }
 })

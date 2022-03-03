@@ -5,10 +5,10 @@
     </div>
     <ul>
       <li><a href="#" class="active">Home</a></li>
-      <li><a href="#my-services">My Services</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#project">Project</a></li>
-      <li><a href="#publication">Publication</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#article">Article</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="menu-toggle">
       <input type="checkbox">
@@ -37,9 +37,6 @@ export default Vue.extend({
     //   logo.style.cursor = "pointer";
 
       // const navbars: any = document.querySelector(".navbar").querySelectorAll("a");
-      // // const animations = document.querySelectorAll(".title");
-      // // console.log(navbars);
-      // // console.log(animations);
       // navbars.forEach((element: any) => {
       //   element.addEventListener("click", function () {
       //     navbars.forEach((navbar: any) => navbar.classList.remove("active"));
@@ -59,7 +56,7 @@ export default Vue.extend({
     display: flex;
     justify-content: space-between;
     top: 0;
-    height: 50px;
+    height: 100px;
     width: 100%;
     align-items: center;
     background-color: #222831;
@@ -67,6 +64,7 @@ export default Vue.extend({
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
     .brand { 
       margin-left: 7vw;
+      font-size: 1.4rem;
       h1 {
         letter-spacing: 3px;
         color: rgb(201, 201, 201);
@@ -84,7 +82,7 @@ export default Vue.extend({
         padding: 18px 25px;
         box-sizing: border-box;
         color: rgb(201, 201, 201);
-        font-size: 0.8em;
+        font-size: 1rem;
       }
       :hover {
         color: white;

@@ -3,7 +3,7 @@
     <h1>Publication</h1>
     <div class="items">
       <div class="items-publication">
-        <a href="https://journal.universitasbumigora.ac.id/index.php/matrik/article/view/1130/702"><img src="../assets/jurnal.jpg" alt="" class="jurnal"></a>
+        <a href="https://journal.universitasbumigora.ac.id/index.php/matrik/article/view/1130/702"><img src="../assets/images/ic_jurnal.jpg" alt="" class="jurnal"></a>
         <h2>Analisis Sentimen Pengguna TwitterTerhadap Layanan Internet Provider Menggunakan Algoritma Support Vector Machine</h2>
         <p>Jurnal publikasi ini saya tulis berdasarkan hasil dari penelitian yang saya lakukan saat mengerjakan tugas akhir kuliah yaitu skripsi. Jurnal ini membahas tentang bagaimana cara mengetahui sentimen dari pengguna layanan internet dari provider tertentu dengan program kecerdasan buatan yang dibuat menggunakan bahasa Python dan algoritma Support Vector Machine kemudian di aplikasikan dalam bentuk website.</p>
       </div>

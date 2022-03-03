@@ -4,9 +4,9 @@
       <h1>Fadhilah Dwi Ananda</h1>
       <p>Front-end Developer</p>
       <div class="icon">
-        <a href="https://www.linkedin.com/in/fadhilahdwiananda/"><img src="../assets/linkedin.svg" alt="" class="linkedin"></a>
-        <a href="https://github.com/fadhildwia"><img src="../assets/github.svg" alt="" class="github"></a>
-        <a href="https://www.instagram.com/fadhilahdwia/"><img src="../assets/instagram.svg" alt="" class="instagram"></a>
+        <a href="https://www.linkedin.com/in/fadhilahdwiananda/"><img src="../assets/images/ic_linkedin.svg" alt="" class="linkedin"></a>
+        <a href="https://github.com/fadhildwia"><img src="../assets/images/ic_github.svg" alt="" class="github"></a>
+        <a href="https://www.instagram.com/fadhilahdwia/"><img src="../assets/images/ic_instagram.svg" alt="" class="instagram"></a>
       </div>
       <p>© Copyright 2021, All Rights Reseved.</p>
     </div>

@@ -25,12 +25,12 @@ export default Vue.extend({
   ],
   data: function() {
     return {
-      test: 'coding.svg'
+      test: 'ic_coding.svg'
     }
   },
   methods: {
     imagePath(photo: string) {
-      return require('../assets/' + photo)
+      return require('../assets/images/' + photo)
     }
   }
 })
